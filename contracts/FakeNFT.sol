@@ -3,6 +3,7 @@ pragma solidity ^0.8.9;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
+
 contract FakeNFT is ERC721 {
 
     uint256 tokenId = 1;
@@ -15,3 +16,4 @@ contract FakeNFT is ERC721 {
         _mint(msg.sender, tokenId);
         tokenId += 1;
     }
+}
